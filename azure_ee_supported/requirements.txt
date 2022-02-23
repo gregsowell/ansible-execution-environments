@@ -48,6 +48,6 @@ azure-mgmt-recoveryservicesbackup==0.6.0
 azure-mgmt-notificationhubs==2.0.0
 azure-mgmt-eventhub==2.0.0
 # awx.awx collection requirements
-pytz  # for schedule_rrule lookup plugin
-python-dateutil>=2.7.0  # schedule_rrule
-awxkit  # For import and export modules
+# pytz  # for schedule_rrule lookup plugin
+# python-dateutil>=2.7.0  # schedule_rrule
+# awxkit  # For import and export modules
