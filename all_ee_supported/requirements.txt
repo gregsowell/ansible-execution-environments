@@ -54,3 +54,5 @@ awxkit  # For import and export modules
 # vmware
 pyVmomi>=6.7
 git+https://github.com/vmware/vsphere-automation-sdk-python.git ; python_version >= '2.7'  # Python 2.6 is not supported
+# hashicorp
+hvac
