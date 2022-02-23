@@ -3,4 +3,4 @@ collections:
   - name: azure.azcollection
     version: 1.11.0
     
-  - name: awx.awx
+#  - name: awx.awx
