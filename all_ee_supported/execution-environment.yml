@@ -1,5 +1,5 @@
 ---
-version: 1.0.1
+version: 1.0.2
 
 build_arg_defaults:
   EE_BASE_IMAGE: 'registry.redhat.io/ansible-automation-platform-21/ee-supported-rhel8'
