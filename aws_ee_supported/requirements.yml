@@ -3,7 +3,7 @@ collections:
   - name: amazon.aws
 #    source: https://pah.gregsowell.com
     
-  - name: amazon.cloud
+#  - name: amazon.cloud
 #    source: https://pah.gregsowell.com
   
   - name: community.aws
