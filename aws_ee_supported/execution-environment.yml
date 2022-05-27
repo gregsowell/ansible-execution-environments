@@ -11,11 +11,11 @@ dependencies:
   galaxy: requirements.yml
   python: requirements.txt
 
-additional_build_steps:
-  prepend: |
-    COPY pulp_webserver.crt /etc/pki/ca-trust/source/anchors
-    COPY root.crt /etc/pki/ca-trust/source/anchors
-    RUN update-ca-trust
+# additional_build_steps:
+#  prepend: |
+#    COPY pulp_webserver.crt /etc/pki/ca-trust/source/anchors
+#    COPY root.crt /etc/pki/ca-trust/source/anchors
+#    RUN update-ca-trust
 #  append:
 #    - RUN echo This is a post-install command!
 #    - RUN ls -la /etc
