@@ -1,0 +1,6 @@
+---
+collections:
+  - name: community.general
+#    version: 1.11.0
+#  - name: awx.awx
+#    version: 19.4.0
