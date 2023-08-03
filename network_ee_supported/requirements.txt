@@ -1,4 +1,20 @@
-#servicenow.servicenow
 requests
 pysnow
 netaddr
+packaging
+requests[security]
+xmltodict
+#juniper
+jxmlease
+ncclient
+paramiko
+scp
+ansible-pylibssh
+#cisco ios
+paramiko
+#cisco aci
+lxml
+cryptography
+pyOpenSSL
+python_dateutil
+xmljson
