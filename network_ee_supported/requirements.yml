@@ -3,3 +3,13 @@ collections:
   - name: community.general
   - name: community.routeros
   - name: servicenow.servicenow
+  - name: ansible.netcommon
+#    version: 2.4.0
+  - name: ansible.utils
+#    version: 2.4.2
+  - name: cisco.ios
+  - name: cisco.nxos
+  - name: arista.eos
+  - name: junipernetworks.junos
+  - name: cisco.meraki
+  - name: cisco.aci
