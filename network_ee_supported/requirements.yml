@@ -13,3 +13,4 @@ collections:
   - name: junipernetworks.junos
   - name: cisco.meraki
   - name: cisco.aci
+  - name: cisco.asa
