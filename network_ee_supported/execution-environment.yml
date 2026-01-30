@@ -8,7 +8,7 @@ images:
 dependencies:
   galaxy:
     collections:
-      - { name: ansible.utils, version: 6.0.1 }
+#      - { name: ansible.utils, version: 6.0.1 }
       - { name: community.general, version: 12.3.0 }
       - { name: netbox.netbox, version: 3.22.0 }
 
