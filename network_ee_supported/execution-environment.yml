@@ -6,6 +6,12 @@ images:
     name: registry.redhat.io/ansible-automation-platform-26/ee-minimal-rhel9:latest
 
 dependencies:
+#  system:
+#    - python3
+#    - python3-pip
+#    - python3-setuptools
+#    - python3-wheel
+    
   galaxy:
     collections:
       - { name: ansible.utils, version: 6.0.1 }
@@ -15,13 +21,21 @@ dependencies:
       - { name: cisco.ios, version: 11.2.0}
       - { name: arista.eos, version: 12.0.0}
 
-  python:
-    - aiohttp
-    - pytz
-    - pynetbox
-    - paramiko
-    - scp
-    - ansible-pylibssh
+#  python:
+#    - aiohttp
+#    - pytz
+#    - pynetbox
+#    - paramiko
+#    - scp
+#    - ansible-pylibssh
 
 options:
   package_manager_path: /usr/bin/microdnf
+
+additional_build_steps:
+  append_final:
+    # ensure pip exists for py3.11 in the image
+    - RUN /usr/bin/python3.11 -m ensurepip --upgrade || true
+    - RUN /usr/bin/python3.11 -m pip install --no-cache-dir --upgrade pip setuptools wheel
+    # install required libs into py3.11 site-packages
+    - RUN /usr/bin/python3.11 -m pip install --no-cache-dir pytz pynetbox aiohttp paramiko scp ansible-pylibssh
